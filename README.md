@@ -32,7 +32,7 @@ roslaunch restaurant_nlp rest.launch
 
 * **`yes_no`** yes/noの音声認識開始（ std_msgs/Bool ）
 
-[](* **`help_me_carry/send_place`** 場所情報の送信（ std_msgs/String）)
+<!--* **`help_me_carry/send_place`** 場所情報の送信（ std_msgs/String )-->
 
 * **`/restaurant_nlp/speak`** 文章の発話( std_msgs/String )
 
