@@ -27,7 +27,7 @@ class Speak:
     def __init__(self):
         rospy.init_node('restaurant_speak')
         rospy.Subscriber('/restaurant_nlp/speak', String, self.callback) # 発話する文章
-        self.pub_finish = rospy.Publisher('help_me_nlp_second_half/finish_speaking', Bool, queue_size=10) # 発話終了の合図
+        self.pub_finish = rospy.Publisher('restaurant_nlp/finish_speaking', Bool, queue_size=10) # 発話終了の合図
 
 if __name__ == '__main__':
     Speak()

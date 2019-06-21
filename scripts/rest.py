@@ -112,7 +112,7 @@ def restaurant():
     rospy.Subscriber('rest_ctrl', String, start_restaurant)#起動用
     rospy.Subscriber('yes_no/recognition_result', String, get_yesno)#yes_no
     rospy.Subscriber('sound_system/recognition/result', String, get_txt)#音声認識結果
-    rospy.Subscriber('help_me_nlp_second_half/finish_speaking', Bool, finish_speaking)#発話終了
+    rospy.Subscriber('restaurant_nlp/finish_speaking', Bool, finish_speaking)#発話終了
     rospy.spin()
 
 if __name__=='__main__':
