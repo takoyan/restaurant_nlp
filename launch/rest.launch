@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="restaurant_nlp" name="rest" type="rest.py" output="screen" />
+  <node pkg="restaurant_nlp" name="speak" type="speak.py" output="screen" />
+</launch>
