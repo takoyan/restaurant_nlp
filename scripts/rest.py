@@ -104,7 +104,7 @@ def restaurant():
                 
             
             
-    rospy.init_node('restaurant_nlp', anonymous=True)
+    rospy.init_node('restaurant_getO', anonymous=True)
     start_resume=rospy.Publisher('/sound_system/recognition', String, queue_size=10)
     yes_no=rospy.Publisher('yes_no/recognition_start', Bool, queue_size=10)
     speak=rospy.Publisher('/restaurant_nlp/speak', String, queue_size=10)#発話開始
